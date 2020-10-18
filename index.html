@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Something</title>
-		<link rel="stylesheet" href="index.css" />
+		<title>To Do List</title>
+		<link defer rel="stylesheet" href="index.css" />
 		<script defer src="clock.js"></script>
+		<script defer src="greeting.js"></script>
 	</head>
 	
 	<body>
@@ -12,5 +13,13 @@
 				00:00:00
 			</h1>
 		</div>
+		
+		<form class="js-form form">
+			<label for="input-name">이름</label>
+			<input id="input-name" type="text" placeholder="이름을 입력해 주세요."/>
+		</form>
+		<h4 class="js-greetings greetings">
+			
+		</h4>
 	</body>
 </html>
