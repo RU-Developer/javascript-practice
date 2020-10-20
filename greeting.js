@@ -1,5 +1,6 @@
 const form = document.querySelector(".js-form"),
 	  inputName = document.querySelector("#input-name"),
+	  inputToDo = document.querySelector(".js-toDoForm"),
 	  greeting = document.querySelector(".js-greetings");
 
 const USER_LS = "currentUser",
@@ -26,6 +27,7 @@ function askForName() {
 function paintGreeting(text) {
 	form.classList.remove(SHOWING_CN);
 	greeting.classList.add(SHOWING_CN);
+	inputToDo.classList.add(SHOWING_CN);
 	greeting.innerText = `환영합니다. ${text}님`;
 }
 
